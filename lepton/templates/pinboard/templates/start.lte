@@ -1,0 +1,53 @@
+{% include('header.lte') %}
+{% autoescape false %}
+</head>
+<body data-twttr-rendered="true" class="home blog custom-background">
+	<div id="wrapper">
+		<header id="header">
+			<h1 id="site-title">{{ logo }} {{ logo_text }}</h1>
+			<div id="site-description">{{ page_title1 }}</div>
+			{{ search }}
+			<div id="social-media-icons">
+				{{ facebook }}
+				{{ twitter }}
+				{{ pinterest }}
+				{{ flickr }}
+				{{ vimeo }}
+			</div>
+			<div class="clear"></div>	
+			
+			<nav id="access">
+				<a class="nav-show" href="#access">Show Navigation</a>
+				<a class="nav-hide" href="#nogo">Hide Navigation</a>
+				<div class="menu-navigation-container">{{ navi_detail }}</div> 
+				<div class="clear"></div>
+			</nav> 
+		</header>  
+		
+		<section id="slider">{{ content1 }}</section>
+		
+		<div id="sidebar-wide" class="widget-area" role="complementary">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">{{ lep_header}}</h3> 
+				<div class="textwidget"></div>
+			</aside>  
+			<div class="clear"></div>
+		</div> 
+		
+		<div id="container">
+			<section id="content" class="column twothirdcol">{{ content2 }}</section> 
+
+			<div id="sidebar" class="column threecol">	
+				<div id="sidebar-top" class="widget-area" role="complementary">
+					<div class="column onecol">{{ content3 }}</div> 
+					<div class="column onecol">{{ content4 }}</div> 
+					<div class="column onecol">{{ content5 }}</div>
+					<div class="column onecol">{{ content6 }}</div>
+				</div> 
+			</div>  
+			<div class="clear"></div>
+			{{ edit_page }}
+		</div> 	<!-- end container -->		
+		
+{% endautoescape %}
+{{ include('footer.lte') }}

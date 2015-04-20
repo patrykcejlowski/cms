@@ -1,0 +1,31 @@
+{% autoescape false %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!-- start header -->
+<head>
+	{{ viewport }}
+	{{ simplepagehead }}	
+	{{ jquery }}
+	{{ migrate }}
+	{{ flexslider }}
+	{{ fitvids }}	
+	{{ scroll }}
+	{{ colorbox }}
+	{{ register_frontend_css }}
+	{{ register_frontend_js }}
+	{{ jquery_settings }}
+	
+	<link rel="stylesheet" id="pinboard-css" href="{{ TEMPLATE_DIR }}/css/style.css"  type="text/css" media="all" />
+	<link rel="stylesheet" id="pinboard-web-font-css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic|Oswald:300,300italic,regular,italic,600,600italic&amp;subset=latin" type="text/css" media="all">
+	<link rel="stylesheet" id="colorbox-css" href="{{ TEMPLATE_DIR }}/css/colorbox.css"  type="text/css" media="all" />
+	<link rel="stylesheet" id="mediaelementplayer-css" href="{{ TEMPLATE_DIR }}/css/mediaelementplayer.css"  type="text/css" media="all" />
+	<link rel="stylesheet" id="mtf_css-css" href="{{ TEMPLATE_DIR }}/css/minitwitter.css" type="text/css" media="all">
+	<link href="{{ TEMPLATE_DIR }}/css/print.css" rel="stylesheet" type="text/css" media="print" />
+	<style type="text/css">#site-title .home,#site-description{position:absolute!important;clip:rect(1px,1px,1px,1px);}</style>
+	<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
+	{{ meta_ie }}
+	{{ css_ie }}
+	{{ ie9 }}
+	{{ ie7_no }}	
+<!-- end header -->
+{% endautoescape %}

@@ -1,0 +1,50 @@
+{% autoescape false %}
+		<div id="footer">
+			<div id="footer-area" class="widget-area" role="complementary">
+				<div class="column threecol">
+					<aside id="meta-2" class="widget widget_meta">
+						<h3 class="widget-title">{{ footer1 }}</h3> 
+						{{ footer_menu }}
+					</aside> 
+				</div>
+				<div class="column threecol">
+					<aside id="linkcat-2" class="widget widget_links">
+						<h3 class="widget-title">{{ footer2 }}</h3>
+						<ul class="xoxo blogroll">
+							<li>{{ footer2_text1 }}</li>
+							<li>{{ footer2_text2 }}</li>
+							<li>{{ footer2_text3 }}</li>
+							<li>{{ footer2_text4 }}</li>
+							<li>{{ footer2_text5 }}</li>
+						</ul>
+					</aside> 
+				</div>
+				<div class="column threecol">
+					<aside id="meta-2" class="widget widget_meta">
+						<h3 class="widget-title">{{ footer3 }}</h3> 
+						<ul>
+							<li>{{ footer3_text1 }}</li>
+							<li>{{ footer3_text2 }}</li>
+							<li>{{ footer3_text3 }}</li>
+							<li>{{ footer3_text4 }}</li> 
+						</ul>
+					</aside> 
+				</div> 
+				<div class="clear"></div>
+			</div> 
+			<div id="copyright">
+				<p class="copyright twocol">{{ lep_footer }}</p>
+				<p class="credits twocol">{{ power }}</p>
+				<div class="clear"></div>
+			</div> 
+		</div> <!-- end footer --> 
+	</div> <!-- end wrapper --> 
+		{{ bottom_settings }}
+		{{ mediaelement }}	
+		{{ wp_mediaelement }}
+		{{ masonry }}
+
+	</body>
+<!-- end bottom -->
+{% endautoescape %}
+</html>

@@ -1,0 +1,48 @@
+{% include('header.lte') %}
+{% autoescape false %}
+</head>
+<body data-twttr-rendered="true" class="page page-template page-template-template-portfolio-left-sidebar-php custom-background">
+	<div id="wrapper">
+		<header id="header">
+			<h1 id="site-title">{{ logo }} {{ logo_text }}</h1>
+			<div id="site-description">{{ page_title1 }}</div>
+			{{ search }}
+			<div id="social-media-icons">
+				{{ facebook }}
+				{{ twitter }}
+				{{ pinterest }}
+				{{ flickr }}
+				{{ vimeo }}
+			</div>
+			<div class="clear"></div>	
+			
+			<nav id="access">
+				<a class="nav-show" href="#access">Show Navigation</a>
+				<a class="nav-hide" href="#nogo">Hide Navigation</a>
+				<div class="menu-navigation-container">{{ navi_detail }}</div> 
+				<div class="clear"></div>
+			</nav> 
+		</header>
+		<hgroup id="current-location">
+			<h6 class="prefix-text">{{ breadcrumb_title }}</h6>
+			<h1 class="page-title">{{ breadcrumb }}</h1>
+		</hgroup>
+		<div id="container">
+			<section id="content" class="column twothirdcol">
+				{{ content1 }}
+				{{ content2 }}
+			</section> 
+
+			<div id="sidebar" class="column threecol">			
+				<div id="sidebar-top" class="widget-area" role="complementary">
+					<div class="column onecol">{{ content3 }}</div> 
+					<div class="column onecol">{{ content4 }}</div> 
+					<div class="column onecol">{{ content5 }}</div>
+					<div class="column onecol">{{ content6 }}</div>
+				</div> 
+			</div>  
+			<div class="clear"></div>
+			{{ edit_page }}
+</div> 		
+{% endautoescape %}
+{{ include('footer.lte') }}
